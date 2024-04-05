@@ -1,0 +1,33 @@
+<% include partials/head %>
+
+<div class="container">
+    <div class="header">
+        <h1 class="title"><%= title %></h1>
+    </div>
+    <% if (name) { %>
+        <div class="character-info">
+            <h2 class="info-heading">Character Information</h2>
+            <ul class="info-list">
+                <li class="info-item"><span class="info-label">Name:</span> <%= name %></li>
+                <li class="info-item"><span class="info-label">Race:</span> <%= race %></li>
+                <li class="info-item"><span class="info-label">Gender:</span> <%= gender %></li>
+                <li class="info-item"><span class="info-label">Ki:</span> <%= ki %></li>
+                <li class="info-item"><span class="info-label">Max Ki:</span> <%= maxKi %></li>
+                <li class="info-item"><span class="info-label">Affiliation:</span> <%= affiliation %></li>
+                <li class="info-item"><span class="info-label">Description:</span> <%= description %></li>
+            </ul>
+        </div>
+    <% } else { %>
+        <p class="no-data">No character data available.</p>
+    <% } %>
+
+    <!-- <div class="search-section">
+        <h2 class="search-heading">Search Character</h2>
+        <form class="search-form" action="/dragonball/search" method="GET">
+            <input class="search-input" type="text" name="name" placeholder="Search by name">
+            <button class="search-button" type="submit">Search by Name</button>
+        </form>
+    </div> -->
+</div>
+
+<% include partials/foot %>

@@ -1,0 +1,20 @@
+<% include partials/head %>
+
+<div class="container">
+    <div class="header">
+        <h1 class="title"><%= title %></h1>
+    </div>
+    <% if (name) { %>
+        <div class="character-info">
+            <h2 class="info-heading">Planet Information</h2>
+            <ul class="info-list">
+                <li class="info-item"><span class="info-label">Name:</span> <%= name %></li>
+                <li class="info-item"><span class="info-label">isDestroyed:</span> <%= isDestroyed %></li>
+            </ul>
+        </div>
+    <% } else { %>
+        <p class="no-data">No planet data available.</p>
+    <% } %>
+</div>
+
+<% include partials/foot %>

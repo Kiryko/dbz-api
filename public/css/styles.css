@@ -1,0 +1,112 @@
+/* Estilos para el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1f1f1f; /* Fondo negro */
+    color: #FFFFFF; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'DBZ Saiyan', sans-serif;
+    letter-spacing: 6px;
+    color: #FFD700; /* Dorado */
+}
+
+/* Lista sin viñetas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Elementos de la lista */
+li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los campos de entrada de texto */
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: calc(100% - 22px);
+    max-width: 300px;
+    color: #000;
+    background-color: #FFFFFF; /* Blanco */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #FF2400; /* Rojo */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF; /* Blanco */
+}
+
+/* Estilos para subtítulos */
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Estilos para botones */
+button {
+    padding: 10px 20px;
+    background-color: #FF2400; /* Rojo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #990000; /* Rojo oscuro */
+}
+
+/* Estilos para la imagen de Shenron */
+.shenron-svg {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Estilos para hacer que el diseño sea más responsivo */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
